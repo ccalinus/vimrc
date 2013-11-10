@@ -1,3 +1,6 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 color koehler
 set spell spelllang=en_us
 set hlsearch
