@@ -9,3 +9,7 @@ Installation:
 	cd ~/.vim
 	git submodule init
 	git submodule update --recursive
+
+
+References:
+	http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
