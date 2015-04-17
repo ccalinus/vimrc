@@ -40,3 +40,5 @@ com! -nargs=+ -complete=command Tabdo call TabDo(<q-args>)
 " Remap ESC to something more convenient
 " (http://vim.wikia.com/wiki/Avoid_the_escape_key)
 inoremap jj <ESC>
+
+let g:templates_directory = '~/.vim/templates'
