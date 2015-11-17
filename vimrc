@@ -1,7 +1,7 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-color koehler
+color badwolf
 set spell spelllang=en_us
 set hlsearch
 syntax on

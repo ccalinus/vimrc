@@ -1,9 +1,6 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git@github.com:tpope/vim-fugitive.git
-[submodule "bundle/dict"]
-	path = bundle/dict
-	url = https://github.com/szw/vim-dict.git
 [submodule "bundle/wordnet"]
 	path = bundle/wordnet
 	url = https://github.com/vim-scripts/Wordnet.vim.git
