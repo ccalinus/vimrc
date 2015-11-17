@@ -4,3 +4,6 @@
 [submodule "bundle/wordnet"]
 	path = bundle/wordnet
 	url = https://github.com/vim-scripts/Wordnet.vim.git
+[submodule "bundle/scratch"]
+	path = bundle/scratch
+	url = https://github.com/mtth/scratch.vim
