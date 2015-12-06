@@ -12,4 +12,5 @@ Installation:
 
 
 References:
-	http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+	[1] http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+	[2] http://jirichara.com/manage-your-vim-plugins-using-pathogen-and-git-submodules

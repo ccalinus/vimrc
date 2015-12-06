@@ -7,3 +7,9 @@
 [submodule "bundle/scratch"]
 	path = bundle/scratch
 	url = https://github.com/mtth/scratch.vim
+[submodule "bundle/vim-bitbake"]
+	path = bundle/vim-bitbake
+	url = https://github.com/kergoth/vim-bitbake
+[submodule "bundle/badwolf"]
+	path = bundle/badwolf
+	url = https://github.com/sjl/badwolf
