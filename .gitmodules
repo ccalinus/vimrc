@@ -13,3 +13,12 @@
 [submodule "bundle/badwolf"]
 	path = bundle/badwolf
 	url = https://github.com/sjl/badwolf
+[submodule "bundle/vim-dict"]
+	path = bundle/vim-dict
+	url = https://github.com/szw/vim-dict.git
+[submodule "bundle/vim-readline"]
+	path = bundle/vim-readline
+	url = https://github.com/jonhiggs/vim-readline
+[submodule "bundle/vim-gnupg"]
+	path = bundle/vim-gnupg
+	url = https://github.com/jamessan/vim-gnupg
