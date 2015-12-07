@@ -1,9 +1,24 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git@github.com:tpope/vim-fugitive.git
-[submodule "bundle/dict"]
-	path = bundle/dict
-	url = https://github.com/szw/vim-dict.git
 [submodule "bundle/wordnet"]
 	path = bundle/wordnet
 	url = https://github.com/vim-scripts/Wordnet.vim.git
+[submodule "bundle/scratch"]
+	path = bundle/scratch
+	url = https://github.com/mtth/scratch.vim
+[submodule "bundle/vim-bitbake"]
+	path = bundle/vim-bitbake
+	url = https://github.com/kergoth/vim-bitbake
+[submodule "bundle/badwolf"]
+	path = bundle/badwolf
+	url = https://github.com/sjl/badwolf
+[submodule "bundle/vim-dict"]
+	path = bundle/vim-dict
+	url = https://github.com/szw/vim-dict.git
+[submodule "bundle/vim-readline"]
+	path = bundle/vim-readline
+	url = https://github.com/jonhiggs/vim-readline
+[submodule "bundle/vim-gnupg"]
+	path = bundle/vim-gnupg
+	url = https://github.com/jamessan/vim-gnupg
