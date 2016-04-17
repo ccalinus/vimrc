@@ -22,3 +22,6 @@
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg
+[submodule "bundle/CCTree"]
+	path = bundle/CCTree
+	url = https://github.com/hari-rangarajan/CCTree.git
