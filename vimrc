@@ -1,7 +1,6 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-color badwolf
 set spell spelllang=en_us
 set hlsearch
 syntax on
@@ -14,6 +13,7 @@ set ts=4
 set shiftwidth=4
 
 set modeline
+colors koehler
 
 " Like windo but restore the current window.
 function! WinDo(command)
