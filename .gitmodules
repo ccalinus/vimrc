@@ -1,9 +1,11 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+	ignore = dirty
 [submodule "bundle/wordnet"]
 	path = bundle/wordnet
 	url = https://github.com/vim-scripts/Wordnet.vim.git
+	ignore = dirty
 [submodule "bundle/scratch"]
 	path = bundle/scratch
 	url = https://github.com/mtth/scratch.vim
@@ -11,9 +13,11 @@
 [submodule "bundle/vim-bitbake"]
 	path = bundle/vim-bitbake
 	url = https://github.com/kergoth/vim-bitbake
+	ignore = dirty
 [submodule "bundle/badwolf"]
 	path = bundle/badwolf
 	url = https://github.com/sjl/badwolf
+	ignore = dirty
 [submodule "bundle/vim-dict"]
 	path = bundle/vim-dict
 	url = https://github.com/szw/vim-dict.git
@@ -21,15 +25,24 @@
 [submodule "bundle/vim-readline"]
 	path = bundle/vim-readline
 	url = https://github.com/jonhiggs/vim-readline
+	ignore = dirty
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg
+	ignore = dirty
 [submodule "bundle/CCTree"]
 	path = bundle/CCTree
 	url = https://github.com/hari-rangarajan/CCTree.git
+	ignore = dirty
 [submodule "bundle/vim-bookmarks"]
 	path = bundle/vim-bookmarks
 	url = https://github.com/MattesGroeger/vim-bookmarks.git
+	ignore = dirty
 [submodule "bundle/webapi-vim"]
 	path = bundle/webapi-vim
 	url = https://github.com/mattn/webapi-vim.git
+	ignore = dirty
+[submodule "bundle/vim-template"]
+	path = bundle/vim-template
+	url = https://github.com/aperezdc/vim-template.git
+	ignore = dirty
