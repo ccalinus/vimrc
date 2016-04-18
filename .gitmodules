@@ -46,3 +46,6 @@
 	path = bundle/vim-template
 	url = https://github.com/aperezdc/vim-template.git
 	ignore = dirty
+[submodule "bundle/Gist.vim"]
+	path = bundle/Gist.vim
+	url = https://github.com/vim-scripts/Gist.vim.git
