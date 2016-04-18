@@ -42,3 +42,4 @@ com! -nargs=+ -complete=command Tabdo call TabDo(<q-args>)
 inoremap jj <ESC>
 
 let g:templates_directory = '~/.vim/templates'
+let g:email ='ccalinus@yahoo.com'
