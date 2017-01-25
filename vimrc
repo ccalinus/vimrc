@@ -37,6 +37,12 @@ function! TabDo(command)
 endfunction
 com! -nargs=+ -complete=command Tabdo call TabDo(<q-args>)
 
+" C code documentation helper (see notebook, 11/26/15)
+function! DocGet()
+  let @x=@%." : ".expand(line(".") + 1)." : ".expand(getline('.'))
+endfunction
+nmap dg :call DocGet() <cr>
+
 " Remap ESC to something more convenient
 " (http://vim.wikia.com/wiki/Avoid_the_escape_key)
 inoremap jj <ESC>
