@@ -50,3 +50,6 @@
 	path = bundle/Gist.vim
 	url = https://github.com/vim-scripts/Gist.vim.git
 	ignore = dirty
+[submodule "bundle/riv.vim.git"]
+	path = bundle/riv.vim.git
+	url = https://github.com/Rykka/riv.vim.git

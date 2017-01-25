@@ -2,9 +2,11 @@
 #
 # %FFILE%
 #
-# Copyright (C) %YEAR% Calin Copos <calin.copos@windriver.com>
-# Distributed under terms of the GPLv2 license.
+# Copyright (C) %YEAR% Calin Copos <%MAIL%>
+# Distributed under terms of the %LICENSE% license.
 #
+
+echo "REMINDER: the template defaults to /bin/sh"
 
 %HERE%
 
