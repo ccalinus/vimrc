@@ -47,5 +47,9 @@ nmap dg :call DocGet() <cr>
 " (http://vim.wikia.com/wiki/Avoid_the_escape_key)
 inoremap jj <ESC>
 
+" Set scripts to be executable from the shell
+" http://unix.stackexchange.com/questions/39982/vim-create-file-with-x-bit
+au BufWritePost * if getline(1) =~ "^#!\s*/bin/" | silent execute "!chmod a+x <afile>" | endif
+
 let g:templates_directory = '~/.vim/templates'
 let g:email ='ccalinus@yahoo.com'
