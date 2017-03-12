@@ -1,4 +1,5 @@
 #!/bin/sh
+# vim: set ts=4 expandtab shiftwidth=4 :
 #
 # %FFILE%
 #
@@ -9,6 +10,3 @@
 echo "REMINDER: the template defaults to /bin/sh"
 
 %HERE%
-
-# The modeline shall be the last line in the script:
-# vim: set ts=4 expandtab shiftwidth=4 :
