@@ -63,4 +63,4 @@ pathogen_plugin_add()
 }
 
 # The modeline shall be the last line in the script:
-# vim: set ts=4 expandtab shiftwidth=4 :
+# vim: set ts=4 et sw=4 :

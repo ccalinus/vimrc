@@ -1,5 +1,5 @@
 #!/bin/sh
-# vim: set ts=4 expandtab shiftwidth=4 :
+# vim: set ts=4 et sw=4 :
 #
 # %FFILE%
 #
