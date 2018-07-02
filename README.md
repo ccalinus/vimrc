@@ -2,7 +2,7 @@ vimrc: VIM resources
 =====================
 
 Installation
-------------
+-------------
 
 Perform these commands:
 
@@ -29,5 +29,3 @@ References
 
 .. [1] `Synchronizing plugins with git submodules and pathogen <http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen>`__
 .. [2] `Manage your vim plugins using pathogen and git submodules <http://jirichara.com/manage-your-vim-plugins-using-pathogen-and-git-submodules>`__
-
-
