@@ -62,3 +62,4 @@
 [submodule "bundle/DrawIt.git"]
 	path = bundle/DrawIt.git
 	url = https://github.com/vim-scripts/DrawIt.git
+	ignore = dirty
