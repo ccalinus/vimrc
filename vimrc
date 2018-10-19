@@ -105,3 +105,6 @@ au BufWritePost * if getline(1) =~ "^#!\s*/bin/" | silent execute "!chmod a+x <a
 
 let g:templates_directory = '~/.vim/templates'
 let g:email ='ccalinus@yahoo.com'
+
+let g:bookmark_save_per_working_dir = 1
+let g:bookmark_highlight_lines = 1
