@@ -2,6 +2,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 set spell spelllang=en_us
+set nospell
 set hlsearch
 syntax on
 
