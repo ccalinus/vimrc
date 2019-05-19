@@ -63,3 +63,6 @@
 	path = bundle/DrawIt.git
 	url = https://github.com/vim-scripts/DrawIt.git
 	ignore = dirty
+[submodule "bundle/vim-table-mode.git"]
+	path = bundle/vim-table-mode.git
+	url = https://github.com/dhruvasagar/vim-table-mode.git
