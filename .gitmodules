@@ -72,3 +72,12 @@
 [submodule "bundle/linediff.vim.git"]
 	path = bundle/linediff.vim.git
 	url = git@github.com:AndrewRadev/linediff.vim.git
+[submodule "bundle/vim-orgmode.git"]
+	path = bundle/vim-orgmode.git
+	url = https://github.com/jceb/vim-orgmode.git
+[submodule "bundle/SyntaxRange.git"]
+	path = bundle/SyntaxRange.git
+	url = https://github.com/vim-scripts/SyntaxRange.git
+[submodule "bundle/txtfmt.git"]
+	path = bundle/txtfmt.git
+	url = https://github.com/bpstahlman/txtfmt.git
