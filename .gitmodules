@@ -84,3 +84,9 @@
 [submodule "bundle/vim-airline.git"]
 	path = bundle/vim-airline.git
 	url = https://github.com/vim-airline/vim-airline.git
+[submodule "bundle/vim-plugin-AnsiEsc.git"]
+	path = bundle/vim-plugin-AnsiEsc.git
+	url = https://github.com/powerman/vim-plugin-AnsiEsc.git
+[submodule "bundle/vim-bitbake.git"]
+	path = bundle/vim-bitbake.git
+	url = https://github.com/kergoth/vim-bitbake.git
