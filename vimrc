@@ -109,3 +109,7 @@ let g:email ='ccalinus@yahoo.com'
 
 let g:bookmark_save_per_working_dir = 1
 let g:bookmark_highlight_lines = 1
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'default'
+let g:airline#extensions#bookmark#enabled = 1
