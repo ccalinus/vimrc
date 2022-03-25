@@ -10,11 +10,15 @@ function Hello()
         echo "Hello, World!"
 endfunction
 
-set ts=4
-set shiftwidth=4
-
 set modeline
-colors koehler
+colors badwolf
+highlight Normal ctermbg=None
+highlight Comment ctermbg=None
+highlight Constant ctermbg=None
+highlight Normal ctermbg=None
+highlight NonText ctermbg=None
+highlight Special ctermbg=None
+highlight Cursor ctermbg=None
 
 " Like windo but restore the current window.
 function! WinDo(command)
@@ -113,3 +117,38 @@ let g:bookmark_highlight_lines = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
 let g:airline#extensions#bookmark#enabled = 1
+
+
+" A naive implementation of https://stackoverflow.com/questions/11975174/how-do-i-search-the-open-buffers-in-vim
+" A better solution is in vim-ingo-library.git vim-GrepCommands.git
+function s:MyBufGrep(...)
+  if a:0 != 1
+    echomsg "The function requires 1 argument"
+    return 1
+  endif
+  echomsg "Searching for ".a:1." in all open buffers"
+  cexpr []
+  echomsg 'bufdo vimgrepadd '.a:1.' %'
+  execute 'bufdo vimgrepadd! '.a:1.' %'
+endfunction
+command! -bang -count -nargs=? MyBufGrep call s:MyBufGrep(<f-args>)
+
+" Setting for finding kernel structures.
+" Example:
+"    ag --vimgrep  "struct device_node {" include
+" or in vim:
+" :Ack "struct device_node {" include
+" See https://github.com/ggreer/the_silver_searcher
+let g:ackprg = 'ag --vimgrep'
+
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+au FileType c set noet ts=8 shiftwidth=8 spell
+au FileType markdown set et ts=4 shiftwidth=4 spell
+au FileType rst set et ts=4 shiftwidth=4 spell
+au FileType gitcommit set et ts=4 shiftwidth=4 spell
+au FileType bitbake set et ts=4 shiftwidth=4 spell
