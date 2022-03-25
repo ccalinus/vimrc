@@ -93,3 +93,21 @@
 [submodule "bundle/literate.vim.git"]
 	path = bundle/literate.vim.git
 	url = https://github.com/zyedidia/literate.vim.git
+[submodule "bundle/vim-ripgrep.git"]
+	path = bundle/vim-ripgrep.git
+	url = https://github.com/jremmen/vim-ripgrep.git
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim
+[submodule "bundle/vim-ingo-library.git"]
+	path = bundle/vim-ingo-library.git
+	url = https://github.com/inkarkat/vim-ingo-library.git
+[submodule "bundle/vim-GrepCommands.git"]
+	path = bundle/vim-GrepCommands.git
+	url = https://github.com/inkarkat/vim-GrepCommands.git
+[submodule "bundle/AnsiEsc.vim.git"]
+	path = bundle/AnsiEsc.vim.git
+	url = https://github.com/vim-scripts/AnsiEsc.vim.git
+[submodule "bundle/vim-easy-align.git"]
+	path = bundle/vim-easy-align.git
+	url = git@github.com:junegunn/vim-easy-align.git
