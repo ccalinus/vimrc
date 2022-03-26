@@ -118,7 +118,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
 let g:airline#extensions#bookmark#enabled = 1
 
-
 " A naive implementation of https://stackoverflow.com/questions/11975174/how-do-i-search-the-open-buffers-in-vim
 " A better solution is in vim-ingo-library.git vim-GrepCommands.git
 function s:MyBufGrep(...)
@@ -141,14 +140,14 @@ command! -bang -count -nargs=? MyBufGrep call s:MyBufGrep(<f-args>)
 " See https://github.com/ggreer/the_silver_searcher
 let g:ackprg = 'ag --vimgrep'
 
-
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-au FileType c set noet ts=8 shiftwidth=8 spell
-au FileType markdown set et ts=4 shiftwidth=4 spell
-au FileType rst set et ts=4 shiftwidth=4 spell
-au FileType gitcommit set et ts=4 shiftwidth=4 spell
-au FileType bitbake set et ts=4 shiftwidth=4 spell
+au FileType c set noet ts=8 sw=8 spell
+au FileType arduino set et ts=4 sw=4 spell
+au FileType markdown set et ts=4 sw=4 spell
+au FileType rst set et ts=4 sw=4 spell
+au FileType gitcommit set et ts=4 sw=4 spell
+au FileType bitbake set et ts=4 sw=4 spell
