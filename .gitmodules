@@ -40,9 +40,6 @@
 [submodule "bundle/vim-table-mode.git"]
 	path = bundle/vim-table-mode.git
 	url = https://github.com/dhruvasagar/vim-table-mode.git
-[submodule "bundle/editorconfig-vim.git"]
-	path = bundle/editorconfig-vim.git
-	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "bundle/linediff.vim.git"]
 	path = bundle/linediff.vim.git
 	url = git@github.com:AndrewRadev/linediff.vim.git
