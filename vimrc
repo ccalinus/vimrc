@@ -7,7 +7,7 @@ set hlsearch
 syntax on
 
 function Hello()
-        echo "Hello, World!"
+  echo "Hello, World!"
 endfunction
 
 set modeline
@@ -43,7 +43,6 @@ endfunction
 com! -nargs=+ -complete=command Tabdo call TabDo(<q-args>)
 
 " C code documentation helper (see notebook, 11/26/15)
-"
 function GetCurFct()
   " http://vim.wikia.com/wiki/Display_the_name_of_the_function_you_are_editing
   let strList = ["while", "foreach", "ifelse", "if else", "for", "if", "else", "try", "catch", "case", "switch"]
@@ -78,15 +77,14 @@ function GetCurFct()
   call winrestview(view)
   return tempstring.position
 endfunction
-
 function GetCurFctName()
   " https://www.ibm.com/developerworks/library/l-vim-script-2/index.html
   let fct =  GetCurFct()
   return substitute(fct,'(.*)','','g')
 endfunction
-
 "function GetCurFctArgs()
 "   TBD
+"endfunction
 
 function! GetCLine()
   " let @x=@%." :: [line: ".expand(line(".") + 1).", function: ".GetCurFct()."] : ".expand(getline('.'))
