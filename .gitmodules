@@ -85,3 +85,6 @@
 [submodule "bundle/vim-localvimrc"]
 	path = bundle/vim-localvimrc
 	url = https://github.com/embear/vim-localvimrc
+[submodule "bundle/vim-syntax-retdecdsm.git"]
+	path = bundle/vim-syntax-retdecdsm.git
+	url = https://github.com/s3rvac/vim-syntax-retdecdsm.git
