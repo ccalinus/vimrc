@@ -149,3 +149,9 @@ au FileType markdown set et ts=4 sw=4 spell
 au FileType rst set et ts=4 sw=4 spell
 au FileType gitcommit set et ts=4 sw=4 spell
 au FileType bitbake set et ts=4 sw=4 spell
+
+let g:localvimrc_enable    = 1
+let g:localvimrc_name      =  [ ".lvimrc" ]
+let g:localvimrc_event     =  [ "BufWinEnter","BufRead","BufNewFile" ]
+let g:localvimrc_sandbox   = 0
+let g:localvimrc_whitelist = '/home/ccopos/PROJECTS/*'
