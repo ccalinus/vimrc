@@ -20,6 +20,9 @@ highlight NonText ctermbg=None
 highlight Special ctermbg=None
 highlight Cursor ctermbg=None
 
+"---
+"
+"
 " Like windo but restore the current window.
 function! WinDo(command)
   let currwin=winnr()
@@ -42,7 +45,9 @@ function! TabDo(command)
 endfunction
 com! -nargs=+ -complete=command Tabdo call TabDo(<q-args>)
 
+"---
 " C code documentation helper (see notebook, 11/26/15)
+"
 function GetCurFct()
   " http://vim.wikia.com/wiki/Display_the_name_of_the_function_you_are_editing
   let strList = ["while", "foreach", "ifelse", "if else", "for", "if", "else", "try", "catch", "case", "switch"]
@@ -85,7 +90,6 @@ endfunction
 "function GetCurFctArgs()
 "   TBD
 "endfunction
-
 function! GetCLine()
   " let @x=@%." :: [line: ".expand(line(".") + 1).", function: ".GetCurFct()."] : ".expand(getline('.'))
   let @x=expand(getline('.'))." [".expand(line(".") + 1).": ".GetCurFctName()." in ".@%."]"
@@ -98,6 +102,9 @@ nmap nl :call GetCLine() <cr>
 nmap nf :call GetCFunction() <cr>
 nmap np "xp <cr>
 
+"---
+" Misc
+"
 " Remap ESC to something more convenient
 " (http://vim.wikia.com/wiki/Avoid_the_escape_key)
 inoremap jj <ESC>
@@ -106,16 +113,26 @@ inoremap jj <ESC>
 " http://unix.stackexchange.com/questions/39982/vim-create-file-with-x-bit
 au BufWritePost * if getline(1) =~ "^#!\s*/bin/" | silent execute "!chmod a+x <afile>" | endif
 
+"---
+"
+"
 let g:templates_directory = '~/.vim/templates'
 let g:email ='ccalinus@yahoo.com'
 
+"---
+"
+"
 let g:bookmark_save_per_working_dir = 1
 let g:bookmark_highlight_lines = 1
+
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
 let g:airline#extensions#bookmark#enabled = 1
 
+"---
+"
+"
 " A naive implementation of https://stackoverflow.com/questions/11975174/how-do-i-search-the-open-buffers-in-vim
 " A better solution is in vim-ingo-library.git vim-GrepCommands.git
 function s:MyBufGrep(...)
@@ -145,7 +162,7 @@ nmap ga <Plug>(EasyAlign)
 
 au FileType c set noet ts=8 sw=8 spell
 au FileType arduino set et ts=4 sw=4 spell
-au FileType markdown set et ts=4 sw=4 spell
+au FileType markdown set et ts=3 sw=3 spell
 au FileType rst set et ts=4 sw=4 spell
 au FileType gitcommit set et ts=4 sw=4 spell
 au FileType bitbake set et ts=4 sw=4 spell
@@ -155,3 +172,31 @@ let g:localvimrc_name      =  [ ".lvimrc" ]
 let g:localvimrc_event     =  [ "BufWinEnter","BufRead","BufNewFile" ]
 let g:localvimrc_sandbox   = 0
 let g:localvimrc_whitelist = '/home/ccopos/PROJECTS/*'
+
+if has("patch-8.1.0360")
+  set diffopt+=internal,algorithm:patience
+endif
+
+"let g:languagetool_jar='/snap/languagetool/45/usr/bin/languagetool-commandline.jar'
+"let g:ale_languagetool_options = '--autoDetect --tray'
+
+" https://jonathanh.co.uk/blog/writing-prose-in-vim/
+function! Proselint()
+  let oldmakeprg = &l:makeprg
+  " set new value of makeprg and call the function
+  set makeprg=proselint\ %
+  make
+  copen
+  " set makeprg back to old value
+  let &l:makeprg = oldmakeprg
+endfunction
+nnoremap <leader>p :call Proselint()<CR>
+
+"---
+" RedingNotes helpers
+"
+function! ReadingNoteDate()
+  put='week '.strftime('%U').', '.strftime('%m').'/'.strftime('%d').'/'.strftime('%Y')
+  normal! o
+endfunction
+inoremap <F3> <C-O>:call ReadingNoteDate() <cr>

@@ -88,3 +88,18 @@
 [submodule "bundle/vim-syntax-retdecdsm.git"]
 	path = bundle/vim-syntax-retdecdsm.git
 	url = https://github.com/s3rvac/vim-syntax-retdecdsm.git
+[submodule "bundle/fist.vim"]
+	path = bundle/fist.vim
+	url = https://git.sr.ht/~ackyshake/fist.vim
+[submodule "bundle/ale.git"]
+	path = bundle/ale.git
+	url = https://github.com/dense-analysis/ale.git
+[submodule "bundle/gist.nvim.git"]
+	path = bundle/gist.nvim.git
+	url = https://github.com/rawnly/gist.nvim.git
+[submodule "bundle/vim-scriptease.git"]
+	path = bundle/vim-scriptease.git
+	url = https://github.com/tpope/vim-scriptease.git
+[submodule "bundle/claude.vim.git"]
+	path = bundle/claude.vim.git
+	url = https://github.com/pasky/claude.vim.git
